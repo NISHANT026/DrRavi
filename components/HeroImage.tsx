@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { doctor } from '@/lib/doctor';
 
 export default function HeroImage() {
-  const [src, setSrc] = useState(doctor.homepageHeroImage);
+  const [src, setSrc] = useState<string>(doctor.homepageHeroImage);
   const fallback = doctor.image1;
 
   return (
