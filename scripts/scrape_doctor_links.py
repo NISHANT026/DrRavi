@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 CANONICAL = {
     "name": "Dr. Ravi Rathore",
     "specialty": "Paediatrician",
-    "address": "21 Ghatkarpar Marg, Near Ss Hospital, Freeganj Ujjain, Ujjain 456010, IN",
+    "address": "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456010",
 }
 
 # All links to scrape (deduplicated)
@@ -136,7 +136,7 @@ def extract_momcuddle(html: str, url: str) -> dict:
     if "Dr. Ravi Rathore" in text and "Ghatkarpar" in text:
         out["name"] = "Dr. Ravi Rathore"
         out["specialty"] = "Pediatrician"
-        out["address"] = "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh - 456001"
+        out["address"] = "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456010"
     for img in soup.find_all("img", src=True):
         src = img.get("src", "")
         if "momcuddle" in src and ("doctor" in src or "listing" in src or "ravi" in src.lower()):
@@ -155,7 +155,7 @@ def extract_threebestrated(html: str, url: str) -> dict:
         return out
     out["name"] = "Dr. Ravi Rathore"
     out["specialty"] = "Pediatrician"
-    out["address"] = "21 Ghatkarpar Marg, Near SS Hospital, Freeganj, Ujjain, MP 456010"
+    out["address"] = "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456010"
     # Image for this listing (often in a card/section)
     for img in soup.find_all("img", src=True):
         src = img.get("src", "")
@@ -173,7 +173,7 @@ def extract_vinsfertility(html: str, url: str) -> dict:
     soup = BeautifulSoup(html, "html.parser")
     if "Dr. Ravi Rathore" in html and "21 Ghatkarpar" in html:
         out["name"] = "Dr. Ravi Rathore"
-        out["address"] = "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456001, IN"
+        out["address"] = "21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456010"
     for img in soup.find_all("img", src=True):
         src = img.get("src", "")
         if "vinsfertility" in src and "ravi" in src.lower():

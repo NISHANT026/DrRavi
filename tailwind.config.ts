@@ -15,6 +15,10 @@ const config: Config = {
         'pastel-mint': '#E8F5E9',
         'pastel-blue-dark': '#BBDEFB',
         'pastel-mint-dark': '#C8E6C9',
+        teal: {
+          600: '#0D9488',
+          700: '#0F766E',
+        },
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],

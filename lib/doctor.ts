@@ -6,7 +6,7 @@
 export const doctor = {
   name: 'Dr. Ravi Rathore',
   specialty: 'Paediatrician',
-  address: '21 Ghatkarpar Marg, Near Ss Hospital, Freeganj Ujjain, Ujjain 456010, IN',
+  address: '21 Ghatkarpar Marg, near SS Hospital, Freeganj, Ujjain, Madhya Pradesh 456010',
   /** Contact from public listings (Mom's Cuddle, ThreeBestRated) */
   phone: '0734 251 6358',
   /** Homepage hero image (ChatGPT-generated image at public/hero.png) */
@@ -26,6 +26,14 @@ export const doctor = {
     'https://threebestrated.in/images/DrRaviRathoreMBBSMDChildCareandAdvancedVaccinationCenter-Ujjain-MP.jpeg',
   ],
 } as const;
+
+/** Short tagline for hero credibility */
+export const heroCredibility =
+  '20+ Years Experience | 5000+ Happy Parents | Vaccination & Newborn Care Expert';
+
+/** Short about snippet for homepage (keep to 3–4 lines) */
+export const aboutShort =
+  'Dr. Ravi Rathore is a Consultant Pediatrician & Child Specialist in Ujjain, dedicated to compassionate care from birth through adolescence. MBBS, MD (Pediatrics), with special focus on vaccination and newborn care.';
 
 /** Clinic timings (from JustDial: Mon–Sat 9 AM – 5 PM) */
 export const clinicTimings = [

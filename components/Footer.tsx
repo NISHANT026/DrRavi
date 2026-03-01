@@ -17,8 +17,8 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <div className="mb-4 flex items-center gap-2 text-lg font-semibold text-blue-600">
-              <span className="flex items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-blue-600">
+            <div className="mb-4 flex items-center gap-2 text-lg font-semibold text-teal-700">
+              <span className="flex items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700">
                 <DoctorLogo size={20} />
               </span>
               Pediatric Care
@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-gray-600 hover:text-blue-600">
+                  <Link href={link.href} className="text-sm text-gray-600 hover:text-teal-700">
                     {link.label}
                   </Link>
                 </li>
@@ -45,19 +45,19 @@ export default function Footer() {
             <h3 className="mb-4 font-semibold text-gray-800">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-600">
               <li className="flex items-start gap-2">
-                <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
-                <a href={`tel:+91${doctor.phone.replace(/\D/g, '').replace(/^0/, '')}`} className="hover:text-blue-600">
+                <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
+                <a href={`tel:+91${doctor.phone.replace(/\D/g, '').replace(/^0/, '')}`} className="hover:text-teal-700">
                   {doctor.phone}
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <EnvelopeIcon className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
-                <a href="mailto:contact@pediatric-clinic.in" className="hover:text-blue-600">
+                <EnvelopeIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
+                <a href="mailto:contact@pediatric-clinic.in" className="hover:text-teal-700">
                   contact@pediatric-clinic.in
                 </a>
               </li>
               <li className="flex items-start gap-2">
-                <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-blue-500" />
+                <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
                 <span>{doctor.address}</span>
               </li>
             </ul>
@@ -65,7 +65,7 @@ export default function Footer() {
 
           <div>
             <h3 className="mb-4 font-semibold text-gray-800">Legal</h3>
-            <Link href="/privacy-policy/" className="text-sm text-gray-600 hover:text-blue-600">
+            <Link href="/privacy-policy/" className="text-sm text-gray-600 hover:text-teal-700">
               Privacy Policy
             </Link>
           </div>

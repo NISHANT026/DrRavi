@@ -14,8 +14,8 @@
     ],
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": ", 21 Ghatkarpar Marg, Near Ss Hospital",
-      "addressLocality": "Freeganj Ujjain",
+      "streetAddress": "21 Ghatkarpar Marg, near SS Hospital",
+      "addressLocality": "Freeganj, Ujjain, Madhya Pradesh 456010",
       "postalCode": "456010",
       "addressRegion": "Ujjain",
       "addressCountry": "IN"
@@ -209,8 +209,8 @@
       "name": "Dr. Ravi Rathores Child Care And Advanced Vaccination Center",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": ", 21 Ghatkarpar Marg, Near Ss Hospital",
-        "addressLocality": "Freeganj Ujjain",
+        "streetAddress": "21 Ghatkarpar Marg, near SS Hospital",
+        "addressLocality": "Freeganj, Ujjain, Madhya Pradesh 456010",
         "addressRegion": "456010",
         "postalCode": "Ujjain"
       }

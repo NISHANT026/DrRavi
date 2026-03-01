@@ -12,6 +12,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Pediatric Care | Child Specialist in India | Vaccination & Newborn Care',
+  icons: {
+    icon: { url: '/favicon.svg', type: 'image/svg+xml' },
+  },
   description:
     'Compassionate pediatric care for your little ones. Expert child specialist in India offering vaccination, newborn care, growth monitoring, and general pediatric consultation. Book your appointment today.',
   keywords:

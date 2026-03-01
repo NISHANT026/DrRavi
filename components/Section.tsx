@@ -25,15 +25,15 @@ export default function Section({
         : 'bg-white';
 
   return (
-    <section id={id} className={`py-16 sm:py-20 ${bgClass} ${className}`}>
+    <section id={id} className={`py-12 sm:py-16 lg:py-20 ${bgClass} ${className}`}>
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {(title || subtitle) && (
-          <div className="mb-12 text-center">
+          <div className="mb-8 text-center sm:mb-12">
             {title && (
-              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">{title}</h2>
+              <h2 className="text-xl font-bold text-gray-900 sm:text-2xl lg:text-3xl">{title}</h2>
             )}
             {subtitle && (
-              <p className="mt-3 max-w-2xl mx-auto text-gray-600">{subtitle}</p>
+              <p className="mt-3 max-w-2xl mx-auto text-base text-gray-600">{subtitle}</p>
             )}
           </div>
         )}
