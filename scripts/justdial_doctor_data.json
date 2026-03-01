@@ -1,0 +1,318 @@
+{
+  "source_url": "https://www.justdial.com/Ujjain/Dr-Ravi-Rathores-Child-Care-And-Advanced-Vaccination-Center-Near-Ss-Hospital-Freeganj-Ujjain/9999PX734-X734-170926060156-J6R8_BZDET",
+  "physician": {
+    "@context": "http://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Ravi Rathores Child Care And Advanced Vaccination Center",
+    "url": "https://www.justdial.com/Ujjain/Dr-Ravi-Rathores-Child-Care-And-Advanced-Vaccination-Center-Near-Ss-Hospital-Freeganj-Ujjain/9999PX734-X734-170926060156-J6R8_BZDET",
+    "image": [
+      "https://content3.jdmagicbox.com/comp/ujjain/r8/9999px734.x734.170926060156.j6r8/catalogue/dr-ravi-rathore-s-child-care-and-advanced-vaccination-center-freeganj-ujjain-ujjain-paediatricians-44o496dfoa.jpg",
+      "https://content3.jdmagicbox.com/comp/ujjain/r8/9999px734.x734.170926060156.j6r8/catalogue/dr-ravi-rathore-s-child-care-and-advanced-vaccination-center-freeganj-ujjain-ujjain-paediatricians-z40lkdsyx6.jpg",
+      "https://content3.jdmagicbox.com/comp/ujjain/r8/9999px734.x734.170926060156.j6r8/catalogue/dr-ravi-rathore-s-child-care-and-advanced-vaccination-center-freeganj-ujjain-ujjain-paediatricians-5mzc5jpd0i.jpg",
+      "https://content3.jdmagicbox.com/comp/ujjain/r8/9999px734.x734.170926060156.j6r8/catalogue/dr-ravi-rathore-s-child-care-and-advanced-vaccination-center-freeganj-ujjain-ujjain-paediatricians-q2riiifkwg.jpg",
+      "https://content3.jdmagicbox.com/comp/ujjain/r8/9999px734.x734.170926060156.j6r8/catalogue/dr-ravi-rathore-s-child-care-and-advanced-vaccination-center-freeganj-ujjain-ujjain-paediatricians-zz8e3z4tg5.jpg"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": ", 21 Ghatkarpar Marg, Near Ss Hospital",
+      "addressLocality": "Freeganj Ujjain",
+      "postalCode": "456010",
+      "addressRegion": "Ujjain",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Ujjain"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "23.1792829",
+      "longitude": "75.7928345"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.1",
+      "ratingCount": "163",
+      "bestRating": "5",
+      "worstRating": "0"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "datePublished": "16th February, 2026",
+        "reviewBody": "Emergency m bache ko dikhane k lie staff n mana kr dia ☹️☹️ bache ka treatment by birth sir se hua h h n emergency jb bacha bhaut ro rha h to call p emergency dikhane ko bola to staff told us sorry we are not available here for emergency",
+        "author": {
+          "@type": "Person",
+          "name": "NN NN"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "27th April, 2025",
+        "reviewBody": "I had a great experience at Dr. Ravi Rathore`s Child Care and Advanced Vaccination Center. The place is very clean and hygienic, which made me feel comfortable. They have good facilities that cater to children`s needs. Everything is well-organized, and I appreciated the immediate availability of services. Overall, I highly recommend this clinic for child care and vaccinations!",
+        "author": {
+          "@type": "Person",
+          "name": "sheetal vaishnav"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "24th March, 2025",
+        "reviewBody": "``Dr. Ravi Rathore Sir has an incredibly kind and compassionate approach. They listen patiently, make you feel comfortable, and treat every concern with empathy and understanding. It`s rare to find a doctor who combines professionalism with such a warm, caring attitude. Truly grateful for the excellent care!``",
+        "author": {
+          "@type": "Person",
+          "name": "Sheetal Sharma"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "9th September, 2024",
+        "reviewBody": "डॉक साहब के हाथ में मालिक ने  शिफ़ा दिया है  उनके हाथ लगाते ही बच्चे ठीक हो जाते है",
+        "author": {
+          "@type": "Person",
+          "name": "saddam shah"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "16th August, 2018",
+        "reviewBody": "Execellent",
+        "author": {
+          "@type": "Person",
+          "name": "Atul Urmaliya"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "30th September, 2025",
+        "reviewBody": "Best doctor in ujjain",
+        "author": {
+          "@type": "Person",
+          "name": "aarti parmar"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "19th August, 2019",
+        "reviewBody": "He is an amazing doctor",
+        "author": {
+          "@type": "Person",
+          "name": "aadarsh patidar"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "25th February, 2018",
+        "reviewBody": "Best doctor..best clinic",
+        "author": {
+          "@type": "Person",
+          "name": "Nikita"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "4th June, 2023",
+        "reviewBody": "",
+        "author": {
+          "@type": "Person",
+          "name": "Vishal Sharma Advocate"
+        }
+      },
+      {
+        "@type": "Review",
+        "datePublished": "29th November, 2025",
+        "reviewBody": "",
+        "author": {
+          "@type": "Person",
+          "name": "Lokesh Patidar"
+        }
+      }
+    ],
+    "medicalSpecialty": [
+      "Paediatricians",
+      "Clinics",
+      "Consultant Physicians",
+      "Vaccination Centres",
+      "Paediatricians For Tonsillitis Treatment",
+      "Paediatric Typhoid Fever Treatment Doctors",
+      "Paediatricians For Infectious Disease"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Monday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Tuesday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Wednesday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Thursday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Friday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Saturday ",
+        "opens": [
+          " 09:00 am "
+        ],
+        "closes": [
+          " 05:00 pm"
+        ]
+      }
+    ]
+  },
+  "review_summary": {
+    "@context": "http://schema.org",
+    "@type": "Review",
+    "name": "Dr. Ravi Rathores Child Care And Advanced Vaccination Center Review",
+    "itemReviewed": {
+      "@type": "Physician",
+      "name": "Dr. Ravi Rathores Child Care And Advanced Vaccination Center",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": ", 21 Ghatkarpar Marg, Near Ss Hospital",
+        "addressLocality": "Freeganj Ujjain",
+        "addressRegion": "456010",
+        "postalCode": "Ujjain"
+      }
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Anonymous"
+    },
+    "positiveNotes": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Many customers mentioned that the doctor is highly skilled, polite, and provides genuine treatment."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "A user highlighted the doctor's humble nature and attentive listening to patient queries."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Several reviews noted the effective vaccination process, with children experiencing minimal discomfort."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Many customers appreciated the doctor's accessibility and responsiveness through messaging platforms for queries."
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Some reviews indicated that despite the clinic's shortcomings, the doctor's expertise makes the visit worthwhile."
+        }
+      ]
+    },
+    "negativeNotes": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Numerous users expressed concerns about the rude behavior of the staff members and lack of proper communication."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Many customers mentioned difficulties in reaching the clinic via phone and the crowded, disorganized environment."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Some reviews pointed out the need for improvement in the waiting area and overall clinic management."
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "A few users suggested that the clinic requires a larger space to accommodate patients comfortably."
+        }
+      ]
+    }
+  },
+  "breadcrumbs": {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https://www.justdial.com/Ujjain",
+          "name": "Ujjain"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://www.justdial.com/Ujjain/Clinics/nct-10101647",
+          "name": "Clinics In Ujjain"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https://www.justdial.com/Ujjain/Clinics-in-Freeganj-Ujjain/nct-10101647",
+          "name": "Clinics in Freeganj Ujjain"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@id": "https://www.justdial.com/Ujjain/Dr-Ravi-Rathores-Child-Care-And-Advanced-Vaccination-Center-Near-Ss-Hospital-Freeganj-Ujjain/9999PX734-X734-170926060156-J6R8_BZDET",
+          "name": "Dr. Ravi Rathores Child Care And Advanced Vaccination Center"
+        }
+      }
+    ]
+  },
+  "page_title": "Dr. Ravi Rathore's Child Care And Advanced Vaccination Center in Freeganj Ujjain,Ujjain - Best Clinics near me in Ujjain - Justdial",
+  "heading": "Dr. Ravi Rathore's Child Care And Advanced Vaccination Center"
+}
