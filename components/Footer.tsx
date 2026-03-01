@@ -80,6 +80,22 @@ export default function Footer() {
             © {new Date().getFullYear()} Pediatric Care. All rights reserved.
           </p>
         </div>
+
+        <div className="mt-8 border-t border-gray-200 pt-8">
+          <p className="text-center text-sm font-medium tracking-wide text-teal-700 sm:text-base">
+            Website designed & developed by{' '}
+            <a
+              href="https://www.instagram.com/nish.parmar_/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-block font-semibold underline-offset-2 transition-all duration-200 ease-in-out hover:underline focus-visible:outline focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:rounded"
+            >
+              <span className="bg-gradient-to-r from-teal-700 to-teal-800 bg-clip-text text-transparent transition-all duration-200 ease-in-out group-hover:from-teal-800 group-hover:to-teal-900">
+                Nishant Parmar
+              </span>
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
