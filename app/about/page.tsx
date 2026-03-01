@@ -33,21 +33,21 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero: premium, hospital-grade, 75vh, two columns */}
-      <section className="relative w-full min-h-[75vh] overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50/40">
+      <section className="relative w-full max-w-full min-h-0 overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50/40 min-[480px]:min-h-[60vh] lg:min-h-[75vh]">
         {/* Subtle depth: blurred radial behind image area */}
-        <div className="pointer-events-none absolute right-0 top-1/2 h-[80%] w-[60%] -translate-y-1/2 rounded-full bg-blue-100/30 blur-3xl" aria-hidden />
-        <div className="pointer-events-none absolute bottom-0 right-0 h-1/2 w-1/2 rounded-full bg-sky-50/60 blur-2xl" aria-hidden />
+        <div className="pointer-events-none absolute right-0 top-1/2 h-[80%] max-w-[90vw] w-[60%] -translate-y-1/2 rounded-full bg-blue-100/30 blur-3xl" aria-hidden />
+        <div className="pointer-events-none absolute bottom-0 right-0 h-1/2 w-1/2 max-w-[90vw] rounded-full bg-sky-50/60 blur-2xl" aria-hidden />
 
-        <div className="relative mx-auto flex min-h-[75vh] max-w-6xl flex-col px-4 py-16 sm:px-6 sm:py-20 lg:flex-row lg:items-center lg:gap-16 lg:px-8 lg:py-24">
+        <div className="relative mx-auto flex w-full min-w-0 max-w-6xl flex-1 flex-col px-4 py-12 sm:px-6 sm:py-16 lg:min-h-[75vh] lg:flex-row lg:items-center lg:gap-16 lg:px-8 lg:py-24">
           {/* Left: text */}
-          <div className="flex flex-1 flex-col justify-center space-y-6 pb-12 lg:pb-0">
+          <div className="flex min-w-0 flex-1 flex-col justify-center space-y-6 pb-8 lg:pb-0">
             <p className="text-sm font-medium uppercase tracking-wider text-blue-600">
               Trusted Pediatric Care in Ujjain
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-[3.25rem]">
               About Dr. Ravi
             </h1>
-            <p className="max-w-[520px] text-lg leading-[1.7] text-slate-600">
+            <p className="max-w-[520px] min-w-0 text-lg leading-[1.7] text-slate-600">
               {doctor.name} — {doctor.specialty} at Child Care and Advanced Vaccination Center, Ujjain. Dedicated to compassionate, evidence-based care for every child.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
@@ -67,8 +67,8 @@ export default function AboutPage() {
           </div>
 
           {/* Right: image — no card, float with subtle shadow */}
-          <div className="relative flex flex-1 items-center justify-center lg:justify-end">
-            <div className="w-full max-w-xl">
+          <div className="relative flex min-w-0 flex-1 items-center justify-center lg:justify-end">
+            <div className="w-full max-w-full lg:max-w-xl">
               <Image
                 src="/about-header.png"
                 alt={`${doctor.name} — Pediatric Care`}
@@ -90,7 +90,7 @@ export default function AboutPage() {
         <h2 className="mb-10 text-2xl font-bold text-slate-900 sm:text-3xl">
           Professional Background
         </h2>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-6 lg:grid-cols-2">
           <Card>
             <div className="flex items-start gap-4">
               <AcademicCapIcon className="h-8 w-8 shrink-0 text-blue-600" />
@@ -132,7 +132,7 @@ export default function AboutPage() {
       </Section>
 
       <Section title="Our Mission" background="pastel-mint">
-        <Card hover={false} className="max-w-3xl mx-auto">
+        <Card hover={false} className="mx-auto w-full max-w-3xl min-w-0">
           <div className="flex items-start gap-4">
             <HeartIcon className="h-10 w-10 shrink-0 text-blue-500" />
             <div>

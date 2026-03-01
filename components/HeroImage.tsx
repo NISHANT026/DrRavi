@@ -11,7 +11,7 @@ export default function HeroImage() {
     <img
       src={src}
       alt={`${doctor.name} - ${doctor.specialty}`}
-      className="h-full w-full object-cover"
+      className="h-full max-h-full w-full max-w-full object-cover"
       loading="eager"
       decoding="async"
       fetchPriority="high"

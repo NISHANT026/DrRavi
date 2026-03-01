@@ -8,8 +8,8 @@ import { doctor } from '@/lib/doctor';
 export default function ContactPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-pastel-mint/60 to-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="w-full max-w-full overflow-hidden bg-gradient-to-br from-pastel-mint/60 to-white py-12 sm:py-16 lg:py-20">
+        <div className="mx-auto w-full max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Contact Us</h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-600">
             We would love to hear from you. Reach out for appointments or queries.
@@ -18,8 +18,8 @@ export default function ContactPage() {
       </section>
 
       <Section background="white">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="space-y-6">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="min-w-0 space-y-6">
             <Card hover={false}>
               <div className="flex items-start gap-4">
                 <PhoneIcon className="h-8 w-8 shrink-0 text-blue-500" />
@@ -50,7 +50,7 @@ export default function ContactPage() {
                 <MapPinIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
                   <h2 className="font-semibold text-gray-900">Address</h2>
-                  <p className="mt-2 text-gray-600 whitespace-pre-line">
+                  <p className="mt-2 min-w-0 break-words text-gray-600 whitespace-pre-line">
                     {doctor.address.replace(/, /g, ',\n')}
                   </p>
                 </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </Card>
           </div>
 
-          <Card hover={false}>
+          <Card hover={false} className="min-w-0">
             <h2 className="text-lg font-semibold text-gray-900">Send a Message</h2>
             <p className="mt-1 text-sm text-gray-600">
               This form is for display only. No backend is connected.

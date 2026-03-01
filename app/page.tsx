@@ -93,12 +93,12 @@ export default function HomePage() {
     <>
       {/* Hero: Doctor identity & credibility above the fold */}
       <section
-        className="relative overflow-hidden bg-gradient-to-br from-pastel-blue via-white to-pastel-mint"
+        className="relative w-full max-w-full overflow-hidden bg-gradient-to-br from-pastel-blue via-white to-pastel-mint pb-20 md:pb-0"
         aria-labelledby="hero-heading"
       >
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
-          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 lg:items-center">
-            <div className="order-2 lg:order-1">
+        <div className="mx-auto w-full max-w-6xl min-w-0 px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+          <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center lg:gap-12">
+            <div className="order-2 min-w-0 lg:order-1">
               <h1
                 id="hero-heading"
                 className="text-[28px] font-bold leading-tight tracking-tight text-gray-900 sm:text-3xl lg:text-4xl"
@@ -108,10 +108,10 @@ export default function HomePage() {
               <p className="mt-2 text-lg font-medium text-teal-700 sm:text-xl">
                 Consultant Pediatrician & Child Specialist
               </p>
-              <p className="mt-4 max-w-xl text-base text-gray-600">
+              <p className="mt-4 max-w-xl min-w-0 text-base text-gray-600">
                 {heroCredibility}
               </p>
-              <div className="mt-8 flex flex-wrap gap-4">
+              <div className="mt-8 flex flex-wrap gap-4 gap-y-3">
                 <Link
                   href="/appointment/"
                   className="btn-primary min-h-[44px] min-w-[140px] px-6"
@@ -126,8 +126,8 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-            <div className="relative order-1 flex justify-center lg:order-2 lg:justify-end">
-              <div className="aspect-[4/3] w-full max-w-md overflow-hidden rounded-xl border border-pastel-blue-dark/30 shadow-soft">
+            <div className="relative order-1 flex min-w-0 justify-center lg:order-2 lg:justify-end">
+              <div className="aspect-[4/3] w-full max-w-full overflow-hidden rounded-xl border border-pastel-blue-dark/30 shadow-soft lg:max-w-md">
                 <HeroImage />
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
         subtitle="Comprehensive pediatric care for your child’s health from birth through adolescence."
         background="white"
       >
-        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+        <div className="grid w-full min-w-0 grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
           {servicesPreview.map((service) => (
             <Link key={service.title} href={service.href}>
               <Card>
@@ -171,7 +171,7 @@ export default function HomePage() {
         subtitle="Trusted pediatric care with a personal touch."
         background="pastel-blue"
       >
-        <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
           {whyChoose.map((item) => (
             <Card key={item.title}>
               <item.icon className="h-10 w-10 text-teal-600" aria-hidden />
@@ -191,7 +191,7 @@ export default function HomePage() {
         subtitle="Trusted by families in Ujjain for compassionate pediatric care."
         background="pastel-mint"
       >
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (
             <Card key={i} hover={false}>
               <p className="text-gray-600">&ldquo;{t.quote}&rdquo;</p>
@@ -210,7 +210,7 @@ export default function HomePage() {
         subtitle=""
         background="white"
       >
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto w-full max-w-2xl min-w-0">
           <p className="text-base text-gray-600 leading-relaxed">
             {aboutShort}
           </p>
@@ -232,7 +232,7 @@ export default function HomePage() {
         subtitle="Visit us or call to book your appointment."
         background="pastel-blue"
       >
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_1fr] lg:items-start">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-[1fr_1fr] lg:items-start">
           <div className="min-w-0 space-y-6">
             <Card hover={false}>
               <h3 className="text-lg font-semibold text-gray-900">Phone</h3>
@@ -247,7 +247,7 @@ export default function HomePage() {
             </Card>
             <Card hover={false}>
               <h3 className="text-lg font-semibold text-gray-900">Address</h3>
-              <p className="mt-2 text-gray-600 whitespace-pre-line">
+              <p className="mt-2 min-w-0 break-words text-gray-600 whitespace-pre-line">
                 {doctor.address.replace(/, /g, ',\n')}
               </p>
             </Card>
@@ -268,11 +268,11 @@ export default function HomePage() {
               </ul>
             </Card>
           </div>
-          <Card hover={false} className="min-w-0 overflow-hidden p-0 self-start w-full">
+          <Card hover={false} className="min-w-0 w-full max-w-full overflow-hidden p-0 self-start">
             <LazyMap />
           </Card>
         </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-4 sm:gap-6">
+        <div className="mt-8 flex flex-wrap justify-center gap-4 gap-y-3 sm:gap-6">
           <Link
             href="/appointment/"
             className="btn-primary min-h-[44px] px-8"

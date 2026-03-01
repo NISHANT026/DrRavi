@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { MobileMenuProvider } from '@/contexts/MobileMenuContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -9,6 +10,12 @@ const inter = Inter({
   variable: '--font-geist-sans',
   display: 'swap',
 });
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   title: 'Pediatric Care | Child Specialist in India | Vaccination & Newborn Care',
@@ -42,10 +49,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://maps.googleapis.com" />
         <link rel="preconnect" href="https://maps.gstatic.com" crossOrigin="anonymous" />
       </head>
-      <body className={`${inter.variable} ${inter.className} font-sans min-h-screen flex flex-col bg-white`}>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+      <body className={`${inter.variable} ${inter.className} font-sans min-h-screen min-w-0 flex flex-col bg-white overflow-x-hidden`}>
+        <MobileMenuProvider>
+          <Navbar />
+          <main className="flex-1 min-w-0 w-full overflow-x-hidden">{children}</main>
+          <Footer />
+        </MobileMenuProvider>
       </body>
     </html>
   );

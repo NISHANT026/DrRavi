@@ -56,8 +56,8 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-pastel-mint/60 to-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="w-full max-w-full overflow-hidden bg-gradient-to-br from-pastel-mint/60 to-white py-12 sm:py-16 lg:py-20">
+        <div className="mx-auto w-full max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-600">
             From vaccination to nutrition, we support your child’s health at every stage.
@@ -70,7 +70,7 @@ export default function ServicesPage() {
           {services.map((service) => (
             <div key={service.id} id={service.id} className="scroll-mt-24">
               <Card>
-                <div className="flex flex-col sm:flex-row gap-6">
+                <div className="flex min-w-0 flex-col gap-6 sm:flex-row">
                   <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-pastel-blue">
                     <service.icon className="h-8 w-8 text-blue-600" />
                   </div>

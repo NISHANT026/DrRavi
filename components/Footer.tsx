@@ -13,9 +13,9 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-gray-100 bg-gray-50">
-      <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="w-full max-w-full overflow-x-hidden border-t border-gray-100 bg-gray-50 pb-24 md:pb-8">
+      <div className="mx-auto w-full max-w-6xl min-w-0 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-4 flex items-center gap-2 text-lg font-semibold text-teal-700">
               <span className="flex items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700">
@@ -56,9 +56,9 @@ export default function Footer() {
                   contact@pediatric-clinic.in
                 </a>
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex min-w-0 items-start gap-2">
                 <MapPinIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
-                <span>{doctor.address}</span>
+                <span className="min-w-0 break-words">{doctor.address}</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-gray-200 pt-8">
-          <p className="text-center text-sm font-medium tracking-wide text-teal-700 sm:text-base">
+          <p className="text-center text-sm font-medium tracking-wide text-teal-700 sm:text-base break-words">
             Website designed & developed by{' '}
             <a
               href="https://www.instagram.com/nish.parmar_/"

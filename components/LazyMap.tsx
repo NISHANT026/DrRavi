@@ -24,7 +24,7 @@ export default function LazyMap() {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative aspect-video w-full min-h-[280px]">
+    <div ref={containerRef} className="relative aspect-video w-full max-w-full min-h-[240px] min-w-0 sm:min-h-[280px]">
       {shouldLoad ? (
         <iframe
           title="Dr. Ravi Rathore's Child Care and Advanced Vaccination Center - Location"

@@ -22,8 +22,8 @@ const whatsappNumber = `91${phoneDigits}`;
 export default function AppointmentPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-pastel-blue/60 to-white py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section className="w-full max-w-full overflow-hidden bg-gradient-to-br from-pastel-blue/60 to-white py-12 sm:py-16 lg:py-20">
+        <div className="mx-auto w-full max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Book an Appointment</h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-600">
             Visit us at the clinic or call / WhatsApp to schedule a visit.
@@ -32,36 +32,36 @@ export default function AppointmentPage() {
       </section>
 
       <Section background="white">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="space-y-6">
+        <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
+          <div className="min-w-0 space-y-6">
             <Card hover={false}>
               <div className="flex items-start gap-4">
                 <MapPinIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
                   <h2 className="font-semibold text-gray-900">Clinic Address</h2>
-                  <p className="mt-2 text-gray-600 whitespace-pre-line">
+                  <p className="mt-2 min-w-0 break-words text-gray-600 whitespace-pre-line">
                     {doctor.address.replace(/, /g, '\n')}
                   </p>
                 </div>
               </div>
             </Card>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex min-w-0 max-w-full flex-col gap-4 sm:flex-row">
               <a
                 href={`tel:+91${phoneDigits}`}
-                className="flex flex-1 items-center justify-center gap-3 rounded-2xl bg-green-600 px-6 py-4 font-semibold text-white shadow-soft transition-all hover:bg-green-700 hover:shadow-soft-hover"
+                className="flex min-h-[44px] min-w-0 flex-1 items-center justify-center gap-3 rounded-2xl bg-green-600 px-4 py-4 font-semibold text-white shadow-soft transition-all hover:bg-green-700 hover:shadow-soft-hover sm:px-6"
               >
-                <PhoneIcon className="h-7 w-7" />
-                Call to Book
+                <PhoneIcon className="h-7 w-7 shrink-0" />
+                <span className="min-w-0 truncate">Call to Book</span>
               </a>
               <a
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex flex-1 items-center justify-center gap-3 rounded-2xl bg-[#25D366] px-6 py-4 font-semibold text-white shadow-soft transition-all hover:opacity-90 hover:shadow-soft-hover"
+                className="flex min-h-[44px] min-w-0 flex-1 items-center justify-center gap-3 rounded-2xl bg-[#25D366] px-4 py-4 font-semibold text-white shadow-soft transition-all hover:opacity-90 hover:shadow-soft-hover sm:px-6"
               >
-                <ChatBubbleLeftRightIcon className="h-7 w-7" />
-                WhatsApp
+                <ChatBubbleLeftRightIcon className="h-7 w-7 shrink-0" />
+                <span className="min-w-0 truncate">WhatsApp</span>
               </a>
             </div>
 
@@ -73,8 +73,8 @@ export default function AppointmentPage() {
             </Card>
           </div>
 
-          <div>
-            <Card hover={false} className="overflow-hidden p-0">
+          <div className="min-w-0">
+            <Card hover={false} className="min-w-0 overflow-hidden p-0">
               <LazyMap />
             </Card>
 
