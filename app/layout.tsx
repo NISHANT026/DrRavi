@@ -79,9 +79,7 @@ export const metadata: Metadata = {
     icon: { url: '/favicon.svg', type: 'image/svg+xml' },
   },
   verification: {
-    // Optional: add when you have them
-    // google: 'your-google-verification-code',
-    // yandex: 'your-yandex-verification-code',
+    google: 'google1d263a30552efcf7',
   },
 };
 
