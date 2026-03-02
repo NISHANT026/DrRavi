@@ -66,12 +66,12 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Right: image — no card, float with subtle shadow */}
+          {/* Right: Dr. Ravi Pediatric Care logo */}
           <div className="relative flex min-w-0 flex-1 items-center justify-center lg:justify-end">
             <div className="w-full max-w-full lg:max-w-xl">
               <Image
-                src="/about-header.png"
-                alt={`${doctor.name} — Pediatric Care`}
+                src="/dr-ravi-pediatric-care-logo.png"
+                alt="Dr. Ravi Pediatric Care — Trusted pediatric care in Ujjain"
                 width={640}
                 height={450}
                 sizes="(max-width: 1024px) 100vw, 50vw"
