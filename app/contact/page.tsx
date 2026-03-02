@@ -17,14 +17,14 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Section background="white" title="Contact Information">
+      <Section background="white">
         <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="min-w-0 space-y-6">
             <Card hover={false}>
               <div className="flex items-start gap-4">
                 <PhoneIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Phone</h3>
+                  <h2 className="font-semibold text-gray-900">Phone</h2>
                   <a href={`tel:+91${doctor.phone.replace(/\D/g, '').replace(/^0/, '')}`} className="mt-2 block text-gray-600 hover:text-blue-600">
                     {doctor.phone}
                   </a>
@@ -35,7 +35,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-4">
                 <EnvelopeIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Email</h3>
+                  <h2 className="font-semibold text-gray-900">Email</h2>
                   <a
                     href="mailto:contact@pediatric-clinic.in"
                     className="mt-2 block text-gray-600 hover:text-blue-600"
@@ -49,7 +49,7 @@ export default function ContactPage() {
               <div className="flex items-start gap-4">
                 <MapPinIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
-                  <h3 className="font-semibold text-gray-900">Address</h3>
+                  <h2 className="font-semibold text-gray-900">Address</h2>
                   <p className="mt-2 min-w-0 break-words text-gray-600 whitespace-pre-line">
                     {doctor.address.replace(/, /g, ',\n')}
                   </p>
@@ -59,7 +59,7 @@ export default function ContactPage() {
           </div>
 
           <Card hover={false} className="min-w-0">
-            <h3 className="text-lg font-semibold text-gray-900">Send a Message</h3>
+            <h2 className="text-lg font-semibold text-gray-900">Send a Message</h2>
             <p className="mt-1 text-sm text-gray-600">
               This form is for display only. No backend is connected.
             </p>

@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-base font-semibold text-gray-800">Quick Links</h2>
+            <h3 className="mb-4 font-semibold text-gray-800">Quick Links</h3>
             <ul className="space-y-2">
               {footerLinks.map((link) => (
                 <li key={link.href}>
@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-base font-semibold text-gray-800">Contact</h2>
+            <h3 className="mb-4 font-semibold text-gray-800">Contact</h3>
             <ul className="space-y-3 text-sm text-gray-600">
               <li className="flex items-start gap-2">
                 <PhoneIcon className="mt-0.5 h-5 w-5 shrink-0 text-teal-600" />
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="mb-4 text-base font-semibold text-gray-800">Legal</h2>
+            <h3 className="mb-4 font-semibold text-gray-800">Legal</h3>
             <Link href="/privacy-policy/" className="text-sm text-gray-600 hover:text-teal-700">
               Privacy Policy
             </Link>
