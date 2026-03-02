@@ -103,7 +103,7 @@ export default function HomePage() {
                 id="hero-heading"
                 className="text-[28px] font-bold leading-tight tracking-tight text-gray-900 sm:text-3xl lg:text-4xl"
               >
-                Dr. Ravi Rathore
+                Best Pediatrician in Ujjain | Dr Ravi Rathore
               </h1>
               <p className="mt-2 text-lg font-medium text-teal-700 sm:text-xl">
                 Consultant Pediatrician & Child Specialist
@@ -135,10 +135,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 1. Key Services */}
+      {/* 1. Child Care Services */}
       <Section
         id="services"
-        title="Key Services"
+        title="Child Care Services"
         subtitle="Comprehensive pediatric care for your child’s health from birth through adolescence."
         background="white"
       >

@@ -17,25 +17,72 @@ export const viewport = {
   maximumScale: 5,
 };
 
+const siteUrl = 'https://pediatric-clinic.in';
+const defaultTitle = 'Best Pediatrician in Ujjain | Dr Ravi Rathore';
+const defaultDescription =
+  'Dr Ravi Rathore is among the best pediatricians in Ujjain. Child Care & Vaccination Center offers vaccination, child specialist consultation & newborn care. Book your appointment in Ujjain, MP.';
+
 export const metadata: Metadata = {
-  title: 'Pediatric Care | Child Specialist in India | Vaccination & Newborn Care',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: defaultTitle,
+    template: '%s | Dr Ravi Rathore Child Care',
+  },
+  description: defaultDescription,
+  keywords: [
+    'Best Pediatrician in Ujjain',
+    'pediatrician Ujjain',
+    'child specialist Ujjain',
+    'vaccination center Ujjain',
+    'Dr Ravi Rathore',
+    'Child Care Ujjain',
+    'pediatric consultation Ujjain',
+    'newborn care Ujjain',
+  ],
+  authors: [{ name: 'Dr. Ravi Rathore', url: siteUrl }],
+  creator: 'Dr. Ravi Rathore',
+  publisher: 'Dr Ravi Rathore Child Care & Vaccination Center',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: siteUrl,
+    siteName: 'Dr Ravi Rathore Child Care & Vaccination Center',
+    title: defaultTitle,
+    description: defaultDescription,
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Dr Ravi Rathore — Best Pediatrician in Ujjain | Child Care & Vaccination Center',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: defaultTitle,
+    description: defaultDescription,
+    images: ['/og-image.jpg'],
+  },
   icons: {
     icon: { url: '/favicon.svg', type: 'image/svg+xml' },
   },
-  description:
-    'Compassionate pediatric care for your little ones. Expert child specialist in India offering vaccination, newborn care, growth monitoring, and general pediatric consultation. Book your appointment today.',
-  keywords:
-    'pediatrician India, child specialist, baby doctor, vaccination, newborn care, child health, pediatric clinic India, growth monitoring',
-  openGraph: {
-    title: 'Pediatric Care | Child Specialist in India',
-    description: 'Compassionate pediatric care for your little ones. Expert child specialist offering vaccination, newborn care & more.',
-    locale: 'en_IN',
-    type: 'website',
+  verification: {
+    // Optional: add when you have them
+    // google: 'your-google-verification-code',
+    // yandex: 'your-yandex-verification-code',
   },
-  robots: 'index, follow',
-  authors: [{ name: 'Dr. Ravi Rathore' }],
-  creator: 'Dr. Ravi Rathore',
-  metadataBase: new URL('https://pediatric-clinic.in'),
 };
 
 export default function RootLayout({

@@ -31,14 +31,14 @@ export default function AppointmentPage() {
         </div>
       </section>
 
-      <Section background="white">
+      <Section background="white" title="Location & Timings">
         <div className="grid w-full min-w-0 grid-cols-1 gap-8 lg:grid-cols-2">
           <div className="min-w-0 space-y-6">
             <Card hover={false}>
               <div className="flex items-start gap-4">
                 <MapPinIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
-                  <h2 className="font-semibold text-gray-900">Clinic Address</h2>
+                  <h3 className="font-semibold text-gray-900">Clinic Address</h3>
                   <p className="mt-2 min-w-0 break-words text-gray-600 whitespace-pre-line">
                     {doctor.address.replace(/, /g, '\n')}
                   </p>
@@ -82,7 +82,7 @@ export default function AppointmentPage() {
               <div className="flex items-start gap-4">
                 <ClockIcon className="h-8 w-8 shrink-0 text-blue-500" />
                 <div>
-                  <h2 className="font-semibold text-gray-900">Clinic Timings</h2>
+                  <h3 className="font-semibold text-gray-900">Clinic Timings</h3>
                   <ul className="mt-3 space-y-2 text-gray-600">
                     {clinicTimings.map((slot) => (
                       <li key={slot.day}>

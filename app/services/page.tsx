@@ -58,7 +58,7 @@ export default function ServicesPage() {
     <>
       <section className="w-full max-w-full overflow-hidden bg-gradient-to-br from-pastel-mint/60 to-white py-12 sm:py-16 lg:py-20">
         <div className="mx-auto w-full max-w-6xl min-w-0 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Services</h1>
+          <h1 className="text-3xl font-bold text-gray-900 sm:text-4xl">Child Care Services in Ujjain</h1>
           <p className="mt-4 max-w-2xl text-lg text-gray-600">
             From vaccination to nutrition, we support your child’s health at every stage.
           </p>
