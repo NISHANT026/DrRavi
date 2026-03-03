@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import DoctorLogo from '@/components/DoctorLogo';
 import { useMobileMenu } from '@/contexts/MobileMenuContext';
+import { useLogoEasterEgg } from '@/contexts/LogoEasterEggContext';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -90,12 +91,29 @@ function NavItem({ href, label, isActive, onClick, variant }: NavItemProps) {
 export default function Navbar() {
   const pathname = usePathname();
   const { isOpen: open, setOpen } = useMobileMenu();
+  const easterEgg = useLogoEasterEgg();
 
   return (
     <header className="sticky top-0 z-50 w-full max-w-full border-b border-gray-100 bg-white/95 backdrop-blur-sm shadow-soft overflow-hidden">
       <nav className="mx-auto flex max-w-6xl min-w-0 w-full items-center justify-between gap-2 px-4 py-4 sm:px-6 lg:px-8" aria-label="Main navigation">
         <Link href="/" className="flex min-w-0 shrink items-center gap-2 text-lg font-semibold text-teal-700 focus-visible:outline focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:rounded-lg sm:text-xl">
-          <span className="flex items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700">
+          <span
+            className="flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700 touch-manipulation"
+            role="button"
+            tabIndex={0}
+            aria-label="Pediatric Care logo"
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              easterEgg?.registerLogoClick();
+            }}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                easterEgg?.registerLogoClick();
+              }
+            }}
+          >
             <DoctorLogo size={20} />
           </span>
           <span className="truncate">Pediatric Care</span>

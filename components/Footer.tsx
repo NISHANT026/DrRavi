@@ -1,7 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { doctor } from '@/lib/doctor';
 import DoctorLogo from '@/components/DoctorLogo';
+import { useLogoEasterEgg } from '@/contexts/LogoEasterEggContext';
 
 const footerLinks = [
   { href: '/', label: 'Home' },
@@ -12,13 +15,27 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const easterEgg = useLogoEasterEgg();
+
   return (
     <footer className="w-full max-w-full overflow-x-hidden border-t border-gray-100 bg-gray-50 pb-24 md:pb-8">
       <div className="mx-auto w-full max-w-6xl min-w-0 px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid w-full min-w-0 grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <div className="mb-4 flex items-center gap-2 text-lg font-semibold text-teal-700">
-              <span className="flex items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700">
+              <span
+                className="flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg bg-pastel-blue px-2 py-1 text-teal-700 touch-manipulation cursor-pointer"
+                role="button"
+                tabIndex={0}
+                aria-label="Pediatric Care logo"
+                onClick={() => easterEgg?.registerLogoClick()}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    easterEgg?.registerLogoClick();
+                  }
+                }}
+              >
                 <DoctorLogo size={20} />
               </span>
               Pediatric Care

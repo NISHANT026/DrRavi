@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { MobileMenuProvider } from '@/contexts/MobileMenuContext';
+import { LogoEasterEggProvider } from '@/contexts/LogoEasterEggContext';
+import EasterEggOverlay from '@/components/EasterEggOverlay';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -51,9 +53,12 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${inter.className} font-sans min-h-screen min-w-0 flex flex-col bg-white overflow-x-hidden`}>
         <MobileMenuProvider>
-          <Navbar />
-          <main className="flex-1 min-w-0 w-full overflow-x-hidden">{children}</main>
-          <Footer />
+          <LogoEasterEggProvider>
+            <Navbar />
+            <main className="flex-1 min-w-0 w-full overflow-x-hidden">{children}</main>
+            <Footer />
+            <EasterEggOverlay />
+          </LogoEasterEggProvider>
         </MobileMenuProvider>
       </body>
     </html>

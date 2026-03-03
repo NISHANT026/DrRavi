@@ -1,9 +1,5 @@
 import Link from 'next/link';
 import {
-  BeakerIcon,
-  HeartIcon,
-  ChartBarIcon,
-  FireIcon,
   AcademicCapIcon,
   CpuChipIcon,
   UserGroupIcon,
@@ -12,6 +8,7 @@ import {
 import Section from '@/components/Section';
 import Card from '@/components/Card';
 import HeroImage from '@/components/HeroImage';
+import KeyServicesGrid from '@/components/KeyServicesGrid';
 import LazyMap from '@/components/LazyMap';
 import StickyBookCTA from '@/components/StickyBookCTA';
 import {
@@ -20,33 +17,6 @@ import {
   heroCredibility,
   aboutShort,
 } from '@/lib/doctor';
-
-const servicesPreview = [
-  {
-    title: 'Vaccination',
-    description: 'Complete immunization schedule for your child’s healthy future.',
-    icon: BeakerIcon,
-    href: '/services/#vaccination',
-  },
-  {
-    title: 'Newborn Care',
-    description: 'Gentle care for newborns and support for new parents.',
-    icon: HeartIcon,
-    href: '/services/#newborn-care',
-  },
-  {
-    title: 'Child Growth Monitoring',
-    description: 'Track milestones and development with expert guidance.',
-    icon: ChartBarIcon,
-    href: '/services/#growth-monitoring',
-  },
-  {
-    title: 'Fever & Infection Treatment',
-    description: 'Quick diagnosis and treatment for common childhood illnesses.',
-    icon: FireIcon,
-    href: '/services/#general-consultation',
-  },
-];
 
 const whyChoose = [
   {
@@ -142,21 +112,7 @@ export default function HomePage() {
         subtitle="Comprehensive pediatric care for your child’s health from birth through adolescence."
         background="white"
       >
-        <div className="grid w-full min-w-0 grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
-          {servicesPreview.map((service) => (
-            <Link key={service.title} href={service.href}>
-              <Card>
-                <service.icon className="h-10 w-10 text-teal-600" aria-hidden />
-                <h3 className="mt-4 text-lg font-semibold text-gray-900 sm:text-base">
-                  {service.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600 line-clamp-3">
-                  {service.description}
-                </p>
-              </Card>
-            </Link>
-          ))}
-        </div>
+        <KeyServicesGrid />
         <div className="mt-8 text-center sm:mt-10">
           <Link href="/services/" className="btn-secondary min-h-[44px] px-6">
             View All Services
