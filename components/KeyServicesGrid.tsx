@@ -8,7 +8,7 @@ import AnimatedServiceIcon from '@/components/AnimatedServiceIcons';
 
 const BARREL_ROLL_DURATION_MS = 600;
 
-function FlaskIconWithBarrelRoll({ className }: { className?: string }) {
+function FlaskIconWithBarrelRoll() {
   const [rolling, setRolling] = useState(false);
 
   const handleClick = useCallback(
@@ -30,7 +30,7 @@ function FlaskIconWithBarrelRoll({ className }: { className?: string }) {
       aria-label="Tap to animate flask icon"
     >
       <span
-        className={`inline-block origin-center [transform-style:preserve-3d] ${rolling ? 'animate-barrel-roll' : ''} ${className ?? ''}`}
+        className={`inline-block origin-center [transform-style:preserve-3d] ${rolling ? 'animate-barrel-roll' : ''}`}
       >
         <BeakerIcon className="h-10 w-10 text-teal-600" aria-hidden />
       </span>
@@ -43,7 +43,7 @@ const keyServices = [
     title: 'Vaccination',
     description: 'Complete immunization schedule for your child\'s healthy future.',
     href: '/services/#vaccination',
-    iconType: 'flask' as const, // static icon, no animation
+    iconType: 'flask' as const,
   },
   {
     title: 'Newborn Care',
